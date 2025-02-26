@@ -1,19 +1,20 @@
-﻿Random dice = new Random();
+﻿/*
+string[] fraudulentOrderIDs = new string[3];
 
-int roll1 = dice.Next(1, 7);
-int roll2 = dice.Next(1, 7);
-int roll3 = dice.Next(1, 7);
+fraudulentOrderIDs[0] = "A123";
+fraudulentOrderIDs[1] = "B456";
+fraudulentOrderIDs[2] = "C789";
+// fraudulentOrderIDs[3] = "D000";
+*/
 
-int total = roll1 + roll2 + roll3;
+string[] fraudulentOrderIDs = [ "A123", "B456", "C789" ];
 
-Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
+Console.WriteLine($"First: {fraudulentOrderIDs[0]}");
+Console.WriteLine($"Second: {fraudulentOrderIDs[1]}");
+Console.WriteLine($"Third: {fraudulentOrderIDs[2]}");
 
-if (total > 14)
-{
-  Console.WriteLine("You win!");
-}
+fraudulentOrderIDs[0] = "F000";
 
-if (total < 15)
-{
-  Console.WriteLine("Sorry, you lose.");
-}
+Console.WriteLine($"Reassign First: {fraudulentOrderIDs[0]}");
+
+Console.WriteLine($"There are {fraudulentOrderIDs.Length} fraudulent orders to process.");
