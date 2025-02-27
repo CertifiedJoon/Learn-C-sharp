@@ -1,4 +1,4 @@
-﻿int employeeLevel = 200;
+﻿int employeeLevel = 400;
 string employeeName = "John Smith";
 
 string title = "";
@@ -10,6 +10,10 @@ switch (employeeLevel)
     break;
   case 200:
     title = "Senior Associate";
+    break;
+  case 300:
+  case 400:
+    title = "Boss";
     break;
 }
 
