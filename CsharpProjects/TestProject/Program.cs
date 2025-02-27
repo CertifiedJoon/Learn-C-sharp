@@ -1,6 +1,16 @@
-﻿string[] names = {"Rowena", "Robin", "Bao"};
+﻿int employeeLevel = 200;
+string employeeName = "John Smith";
 
-foreach (string name in names)
+string title = "";
+
+switch (employeeLevel)
 {
-  Console.WriteLine(name);
+  case 100:
+    title = "Junior Associate";
+    break;
+  case 200:
+    title = "Senior Associate";
+    break;
 }
+
+Console.WriteLine($"{employeeName}, {title}");
